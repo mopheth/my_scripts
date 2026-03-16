@@ -1,0 +1,111 @@
+# aliases I might use with csh
+
+alias show_linux_tools 'repoquery -a --installed'
+
+alias cd 'chdir \!*; echo $cwd; set prompt = "%m @ %c : "'
+
+alias . 'cd ..'
+
+alias c 'clear; echo $cwd'
+
+alias ... 'cd ../../..'
+
+alias .... 'cd ../../../..'
+
+alias ..... 'cd ../../../../..'
+
+alias ...... 'cd ../../../../../..'
+
+alias greppaa 'grep -r \!:1 *'
+
+alias emasc 'emacs'
+alias emcas 'emacs'
+
+alias ajotmulla 'bjobs -l'
+
+alias projomistaja 'idm -o \!:1:m'
+alias projoikat 'idm -? \!:1:rw'
+alias taakse 'bg'
+alias kaynnissa 'jobs'
+
+alias listaa 'ls -d -1 "$PWD/"* > filelist.f'
+
+# grep <etsittava> <sijainti>
+alias etsi 'grep -A4'
+alias etsi2 'grep * | grep -i \!:1 | grep -i \!:2'
+
+alias nytten 'date +"%T"'
+#alias nowtime nytten
+#alias nowdate 'date +"%d-%m-%Y"'
+
+alias kaikkitilaa 'du -h --max-depth=1 | sort -hr'
+alias tilaa 'df -h .'
+
+alias l 'ls -al; echo "current path:"; echo $cwd'
+# alias h 'history'
+alias muuta 'emacs ~/.cshrc.personal'
+
+alias kuka 'finger'
+alias kovinkayttaja 'top -n 1'
+
+alias tarraa 'tar -czvf'
+alias untarraa 'tar -zxvf'
+
+alias juksaa 'emacs $HOME/CHEATSHEET.txt &'
+
+alias hae 'env | grep'
+
+alias gs 'git status'
+
+#alias ga 'git add'
+
+#alias gc 'git commit -m'
+
+#alias gp 'git push origin HEAD:refs/for/r001_master'
+
+#alias gl 'git log --oneline --graph --all'
+
+#alias gco 'git checkout'
+
+#alias gb 'git branch'
+
+#alias gpl 'git pull'
+
+alias meminfo 'free -m -l -t'
+
+alias cpuinfo 'lscpu'
+
+alias mis 'echo $cwd'
+
+#alias ml 'module list'
+#alias ma 'module avail'
+#alias mp 'module purge'
+#alias modl 'module load'
+
+alias egrep 'egrep --color=auto'
+alias fgrep 'fgrep --color=auto'
+alias grep 'grep --color=auto'
+alias l. 'ls -d .* --color=auto'
+alias ll 'ls -l --color=auto'
+alias ls 'ls --color=auto'
+
+alias wa 'watch -n 1'
+
+#alias gst 'git status'
+#alias gci 'git commit'
+#alias gad 'git add'
+#alias gdf 'git diff'
+
+## Settings
+# set autocomplete in csh
+#set autolist
+## correcting provides correction: is this what you meant:?
+set correct=cmd
+## If tclsh is running a script, it doesn't exit on detecting an EOF on stdin;
+set ignoreof
+## no beeping when incorrect
+set nobeep
+
+set prompt = "%m @ %c : "
+
+
